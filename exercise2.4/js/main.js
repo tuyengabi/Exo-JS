@@ -1,8 +1,11 @@
-let A = 1;
-let B = A + 3;
-A = 3;
+let first = 'belle marquise,';
+let second = 'vos beaux yeux ';
+let third = 'me font ';
+let fouth = 'mourir d\'amour ';
 
 
-console.log('A vaut ' + A);
-console.log('B vaut ' + B);
+console.log(first + second + third + fouth);
+console.log(second + third + fouth + first);
+console.log(second + first + third + fouth);
+console.log(first + third + fouth + second);
 
