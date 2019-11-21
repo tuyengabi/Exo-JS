@@ -1,23 +1,13 @@
+//je créer une variable pour recuperer le select
+let mySelector = document.getElementsByClassName('chooseADate');
 
+//je créer une variable pour recuperer le span
+let myChoice = document.querySelector('#valeurListe');
 
-//je créer un fonction qui ajouter l'élément à mon body
-function displayText() {
+//je créer une fonction qui ajoute la valeur de mySelector à valeurListe
+function addMyChoice() {
+    myChoice.innerHTML = mySelector[0].value;
+}
 
-//je récuperer ma section
-let myBody = document.querySelector('body');
-
-//je créer un nouveau élément
-let newElement = document.createElement('p');
-
-//je créer un élément de text
-let newText = document.createTextNode('Commencer sa sieste dès le réveil et ne l’achever qu’au coucher!');
-    
-    //j'ajoute le text à l'élément p
-    newElement.appendChild(newText);
-    //j'ajoute l'élément p à mon body
-    myBody.appendChild(newElement);
-
-};
-
-let btnPhrase = document.querySelector(".btn");
-btnPhrase.addEventListener('click',displayText);
+//j'appelle ma fonction avec un événement onchange qui permet changer la valeur 
+mySelector[0].onchange = addMyChoice;
