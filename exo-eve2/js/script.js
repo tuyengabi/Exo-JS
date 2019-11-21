@@ -9,25 +9,29 @@ let newText = document.createTextNode('Commencer sa sieste dès le réveil et ne
 
 
 
-//je créer un fonction qui ajouter l'élément à mon body
+//je créer une fonction qui ajouter l'élément texte bleu à mon body
 function displayText() {
 
     //j'ajoute le text à l'élément p
     newElement.appendChild(newText);
     //j'ajoute l'élément p à mon body
-    myBody.appendChild(newElement);
+    myBody.appendChild(newElement).style.color = "cyan";
 
 };
 
-function setColor() {
-
-    document.querySelector('p').style.color = "blue";
-
-};
-
-// let btnPhrase = document.querySelector(".btn");
-// btnPhrase.addEventListener('click', setColor);
-
-let btnPhrase = document.querySelector(".btn");
+//j'appelle la fonction displayText 
+let btnPhrase = document.querySelector(".btndisplay");
 btnPhrase.addEventListener('click', displayText);
+
+//je créer une fonction qui change la couleur de texte
+function changeColor() {
+    // let newColor = document.getElementsByTagName('p')[0];
+    let newColor = document.querySelector('p');
+    newColor.style.color = "magenta";
+
+};
+
+//j'appelle la fonction changeColor
+let btnChangeColor = document.querySelector(".btnRed");
+btnChangeColor.addEventListener('click', changeColor);
 
