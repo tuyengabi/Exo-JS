@@ -1,8 +1,23 @@
-let A = 1;
-let B = A + 3;
-A = 3;
+let myArray = [];
+let yourNumber = prompt('give your number: ');
+
+let newArray = Number(yourNumber) + 1;
 
 
-console.log('A vaut ' + A);
-console.log('B vaut ' + B);
+myArray.push(newArray);
+
+let myBody = document.querySelector('body');
+
+let newElement = document.createElement('p');
+
+let newNumber = document.createTextNode('your numbers: ' + newArray);
+
+newElement.appendChild(newNumber);
+
+myBody.appendChild(newElement);
+
+console.log('my numbers: ' + myArray);
+console.log('your number: ' + yourNumber);
+console.log('your new string: ' + newArray);
+
 
