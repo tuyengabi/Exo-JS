@@ -1,22 +1,28 @@
-let myArray = [];
-let yourNumber = prompt('give a number:');
-
-myArray.push(yourNumber);
+let myArray = [5, 15, 26, 12, 78, 56, 45, 78, 42];
 
 
-    let myBody = document.querySelector('body');
+let myBody = document.querySelector('body');
 
-    let newElement = document.createElement('p');
+let newElement1 = document.createElement('p');
 
-    let newNumber = document.createTextNode('your numbers: ' + myArray);
+let newNumber1 = document.createTextNode('3ème case: ' + myArray[2]);
 
-    newElement.appendChild(newNumber);
+newElement1.appendChild(newNumber1);
 
-    myBody.appendChild(newElement);
+myBody.appendChild(newElement1);
+
+let newElement2 = document.createElement('p');
+
+let newNumber2 = document.createTextNode('7ème case: ' + myArray[6]);
+
+newElement2.appendChild(newNumber2);
+
+myBody.appendChild(newElement2);
 
 
 
 
-console.log('my numbers: ' + myArray);
-console.log('your number ' + yourNumber);
+
+
+
 
