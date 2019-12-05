@@ -1,8 +1,14 @@
-let A = 1;
-let B = A + 3;
-A = 3;
+let number = "";
+let i;
+let n = 10;
+
+for (i = prompt('give a number: '); i < 5; i++) {
+    number *= "The number is " + i + "<br>";
+}
+document.getElementById("demo").innerHTML = number;
 
 
-console.log('A vaut ' + A);
-console.log('B vaut ' + B);
+
+
+
 

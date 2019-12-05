@@ -1,22 +1,16 @@
-let myArray = [];
-let yourNumber = prompt('give a number:');
+let num = "";
+let i;
 
-myArray.push(yourNumber);
-
-
-    let myBody = document.querySelector('body');
-
-    let newElement = document.createElement('p');
-
-    let newNumber = document.createTextNode('your numbers: ' + myArray);
-
-    newElement.appendChild(newNumber);
-
-    myBody.appendChild(newElement);
+for (i = 0; i < 5; i++) {
+    num += "The number is " + i + "<br>";
+}
+document.getElementById("myNum").innerHTML = num;
 
 
 
 
-console.log('my numbers: ' + myArray);
-console.log('your number ' + yourNumber);
+
+
+
+
 
