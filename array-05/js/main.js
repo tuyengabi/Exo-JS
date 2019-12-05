@@ -1,22 +1,34 @@
-let myArray = [];
-let yourNumber = prompt('give a number:');
+let myArray = [5, 15, 26, 12, 78, 56, 45, 78, 42];
+console.log(myArray);
 
-myArray.push(yourNumber);
+let myBody = document.querySelector('body');
 
+let newElement1 = document.createElement('p');
 
-    let myBody = document.querySelector('body');
+let newNumber1 = document.createTextNode('before array' + myArray);
 
-    let newElement = document.createElement('p');
+newElement1.appendChild(newNumber1);
 
-    let newNumber = document.createTextNode('your numbers: ' + myArray);
-
-    newElement.appendChild(newNumber);
-
-    myBody.appendChild(newElement);
+myBody.appendChild(newElement1);
 
 
+let fifth = myArray.splice(4,1);
+
+console.log(fifth);
+console.log(myArray);
+
+let newElement2 = document.createElement('p');
+
+let newNumber2 = document.createTextNode('after array' + myArray);
+
+newElement2.appendChild(newNumber2);
+
+myBody.appendChild(newElement2);
 
 
-console.log('my numbers: ' + myArray);
-console.log('your number ' + yourNumber);
+
+
+
+
+
 
