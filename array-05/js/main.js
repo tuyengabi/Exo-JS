@@ -5,7 +5,7 @@ let myBody = document.querySelector('body');
 
 let newElement1 = document.createElement('p');
 
-let newNumber1 = document.createTextNode('before array' + myArray);
+let newNumber1 = document.createTextNode('before array: ' + myArray);
 
 newElement1.appendChild(newNumber1);
 
@@ -19,7 +19,7 @@ console.log(myArray);
 
 let newElement2 = document.createElement('p');
 
-let newNumber2 = document.createTextNode('after array' + myArray);
+let newNumber2 = document.createTextNode('after array: ' + myArray);
 
 newElement2.appendChild(newNumber2);
 
