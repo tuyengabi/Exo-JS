@@ -1,14 +1,9 @@
-let number = "";
+let num = parseInt(prompt('give a number: '));
 let i;
-let n = 10;
 
-for (i = prompt('give a number: '); i < 5; i++) {
-    number += "The number is " + i + "<br>";
+for (i = num; i <= num + 10; i++) {
+    console.log("The number is " + i );
 }
-document.getElementById("demo").innerHTML = number;
 
-
-
-
-
+document.getElementById("demo").innerHTML = num;
 
