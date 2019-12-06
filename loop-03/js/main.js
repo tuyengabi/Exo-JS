@@ -1,11 +1,12 @@
-let number = "";
-let i;
-let n = 10;
+let i = parseInt(prompt("give a number: "));
 
-for (i = prompt('give a number: '); i < 5; i++) {
-    number *= "The number is " + i + "<br>";
+
+for (j = 1; j <= 10; j++) {
+    mul = i * j;
+    console.log(i +' * '+j+' = '+mul); 
+
 }
-document.getElementById("demo").innerHTML = number;
+// document.getElementById("demo").innerHTML = number;
 
 
 
