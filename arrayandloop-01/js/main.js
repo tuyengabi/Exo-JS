@@ -4,11 +4,14 @@
 let arr = [];
 let n = prompt('La quantité de Zero: ');
 
-for (i=0 ; i<=n ; i++) {
+//i represente le compteur de boucle
+for (i=0 ; i<n ; i++) {
     
-    arr.push(n);
-    console.log(arr);
+    arr.push(0);
+    console.log('nous sommes au tour n° ' + i);
     
 }
+
+console.log(arr);
 
 
