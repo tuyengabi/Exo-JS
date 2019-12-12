@@ -1,8 +1,14 @@
-let A = 1;
-let B = A + 3;
-A = 3;
+//generer avec une boucle un tableau 
+//let arr=[0,0,0,0,0,0,0,0];
 
+let arr = [];
+let n = prompt('La quantité de Zero: ');
 
-console.log('A vaut ' + A);
-console.log('B vaut ' + B);
+for (i=0 ; i<=n ; i++) {
+    
+    arr.push(n);
+    console.log(arr);
+    
+}
+
 
